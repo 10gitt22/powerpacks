@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../src/icons/pp.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="support.css">
+    <title>Support</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="h-content">
+                <div class="h-left">
+                    <nav>
+                        <ul>
+                            <li class="li-logo"><a href="../../index.html" style="display:flex;" class="index-a"><img id="logo" src="../../src/icons/logo.png" alt=""></a></li>
+                            <li><a href="../../index.html">Main</a></li>
+                            <li><a href="../cards/cards.html">Cards</a></li>
+                            <li><a href="../../index.html#stages">Power</a></li>
+                            <li><a href="../../index.html#faq">FAQ</a></li>
+                            <li><a href="../../index.html#roadmap">Roadmap</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="h-right">
+                    <nav>
+                        <ul>
+                            <li><a href="https://wax.atomichub.io/" target="_blank">OPEN PACK</a></li>
+                            <li><a href="https://t.me/powerpacksio/" target="_blank">BONUS NFT</a></li>
+                            <li><a href="https://wax.atomichub.io/market?collection_name=powerpacksio&order=desc&sort=created&symbol=WAX" target="_blank">MARCETPLACE</a></li>
+                        </ul>
+                    </nav>
+                    <span onclick="openNav()" class="burger-menu">&#9776;</span>
+                </div>
+            </div>
+
+
+            <div id="mySidenav" class="sidenav">
+                <div id="menu-nav">
+                    <div class="logo-nav-mn">PowerPacks</div>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="../../index.html">Main</a>
+                    <a href="../cards/cards.html">Cards</a>
+                    <a href="../../index.html#stages">Power</a>
+                    <a href="../../index.html#faq">FAQ</a>
+                    <a href="../../index.html#roadmap">Roadmap</a>
+                    <br>
+                    <br>
+                    <a href="https://neftyblocks.com/" target="_blank">OPEN PACK</a>
+                    <a href="https://neftyblocks.com/" target="_blank">BLEND</a>
+                    <a href="https://wax.atomichub.io/market" target="_blank">MARCETPLACE</a>
+                </div>
+              </div>
+        </header>
+        <main>
+                <form>
+                    <input type="hidden" name="project_name" value="Power Pack">
+		            <input type="hidden" name="admin_email" value="support@powerpacks.io">
+		            <input type="hidden" name="form_subject" value="Message">
+
+                    <div class="field" id="email">
+                        <label for="user_email">Email:</label>
+                        <input type="email" name="email" id="user_email" class="inp-field" placeholder="Your email" pattern="[a-zA-Z0-9.-_]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        <span class="error-msg">Required field</span>
+                    </div>
+                    <div class="field" id="wallet">
+                        <label for="wax_wallet">Wax wallet:</label>
+                        <input type="text" name="wallet" id="wax_wallet" class="inp-field" placeholder="Wallet"  required>
+                        <span class="error-msg">Please fill out all required fields</span>
+                    </div>
+                    <div class="field" id="comment">
+                        <label for="user_comment">Comments</label>
+                        <textarea name="comment" id="user_comment"></textarea>
+                    </div>
+                    <div class="field">
+                        <div class="error-block">Please fill out all required fields</div>
+                    </div>
+                    <button type="submit" class="button">Send</button>
+                    <p class="policies">«By clicking on the button, you agree to our <a href="https://www.privacypolicygenerator.info/live.php?token=ZhfVJFzHTsd4FcxKv4zWNla6uo6fI14R">Privacy Policy.»</a></p>
+                </form>
+
+    </main>
+        <footer>
+            <div class="footer-content">
+               
+                <div class="mail">support@powerpacks.io</div>
+                <div class="telegram"><a href="https://t.me/powerpacksio/" target="_blank">Telegram</a></div>
+            </div>
+        </footer>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="support.js"></script>
+</body>
+</html>

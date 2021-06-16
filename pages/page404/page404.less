@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../src/backgrounds/tild3564-6161-4536-a631-313463366634__not-found-1770320_19.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .title{
+        font-size: 80px;
+    }
+
+    .text{
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    button{
+        background-color: #de4a00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        width: 230px;
+        height: 60px;
+        border: 0;
+        border-radius: 25px;
+        font-weight: 700;
+        transition: .2s linear;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #d6a462;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 25px 10px #fff;
+            animation: moving 7s ease 0s infinite normal;
+            left: -10%;
+        }
+    }
+}
+
+@keyframes moving {  
+
+30% {  
+    webkit-transform: translateX(33.5em);
+    transform: translateX(33.5em);   
+}
+
+100% {  webkit-transform: translateX(33.5em);
+    transform: translateX(33.5em);   
+    
+    }
+}
+
+@media (max-width: 1000px) {
+    .text{
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text{
+        max-width: 315px;
+        font-size: 17px !important;
+    }
+}

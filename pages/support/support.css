@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 20;
+}
+header .h-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+}
+header nav,
+header ul {
+  height: 100%;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 30px;
+  line-height: 1.55;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: 0.2s linear;
+}
+header ul li:hover {
+  border-color: #ffdf70;
+}
+header ul li:hover a {
+  color: #ffdf70;
+}
+header ul .li-logo {
+  width: auto;
+  border: none;
+}
+header ul .li-logo .index-a {
+  display: flex;
+}
+header ul .li-logo #logo {
+  height: 57px;
+}
+header ul a {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+header .sidenav {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 0 15px -5px #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+header .sidenav .logo-nav-mn {
+  padding-left: 32px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+header .sidenav a:hover {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.h-left {
+  height: 100%;
+}
+.h-right {
+  display: flex;
+  align-items: center;
+}
+.h-right li {
+  width: auto;
+  font-weight: 700;
+  font-size: 13px;
+}
+.h-right li a {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.h-right .burger-menu {
+  display: none;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.h-right .burger-menu:hover {
+  cursor: pointer;
+  color: #ffdf70;
+}
+@media (max-width: 1300px) {
+  header ul li {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    padding-right: 20px;
+  }
+  header .h-left ul li {
+    display: none;
+  }
+  header .h-left .li-logo {
+    display: flex;
+  }
+  header .h-right nav {
+    display: none;
+  }
+  header .h-right .burger-menu {
+    display: block;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #eee;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 900px;
+  font-family: "Roboto", sans-serif;
+}
+form .field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+form .field label {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 300;
+}
+form .field .inp-field {
+  height: 60px;
+  outline: none;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #000;
+}
+form .field .inp-field::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+form .field textarea {
+  resize: none;
+  height: 170px;
+  outline: none;
+  border: 1px solid #000;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.button {
+  width: 161px;
+  height: 60px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 0px;
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  height: 120%;
+  margin-top: -20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 25px 5px #fff;
+  animation: moving 4s ease 0s infinite normal;
+  left: -70%;
+}
+@keyframes moving {
+  50% {
+    webkit-transform: translateX(33.5em);
+    transform: translateX(33.5em);
+  }
+  100% {
+    webkit-transform: translateX(33.5em);
+    transform: translateX(33.5em);
+  }
+}
+.error-block {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #fff;
+  border: 0;
+  font-weight: 300;
+  margin-bottom: 20px;
+  background-color: #F95D51;
+}
+.field.error .inp-field {
+  border: 1px solid red;
+}
+.field.error.error .error-msg {
+  display: block;
+}
+.field.error .error-block {
+  display: flex;
+}
+.error-msg {
+  display: none;
+  font-size: 12px;
+  color: red;
+  margin-top: 3px;
+}
+.policies {
+  font-style: italic;
+  font-size: 14px;
+}
+.policies a {
+  color: #ff8562;
+}
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #fff;
+  font-size: 18px;
+}
+footer .telegram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 30px;
+  line-height: 1.55;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: 0.2s linear;
+}
+footer .telegram a {
+  color: #fff;
+  transition: 0.2s linear;
+}
+footer .telegram:hover {
+  border-color: #ffdf70;
+}
+footer .telegram:hover a {
+  color: #ffdf70;
+}
+@media (max-width: 500px) {
+  footer .footer-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  footer .footer-content .mail {
+    font-size: 16px;
+  }
+  footer .footer-content .telegram {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  footer .footer-content .mail {
+    font-size: 14px;
+  }
+  footer .footer-content .telegram {
+    width: 115px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1500px) {
+  main {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1700px) {
+  main {
+    height: 100vh;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  form {
+    width: 90%;
+  }
+  form .field .inp-field {
+    height: 50px;
+  }
+}
