@@ -189,7 +189,7 @@ main {
   padding-bottom: 20px;
 }
 .page-content .text {
-  width: 44%;
+  width: 70%;
   padding: 15px 35px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -216,7 +216,10 @@ footer .footer-content {
   color: #fff;
   font-size: 18px;
 }
-footer .telegram {
+footer .block {
+  display: flex;
+}
+footer .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,15 +233,26 @@ footer .telegram {
   margin-right: 15px;
   transition: 0.2s linear;
 }
-footer .telegram a {
+footer .btn a {
   color: #fff;
   transition: 0.2s linear;
 }
-footer .telegram:hover {
+footer .btn:hover {
   border-color: #ffdf70;
 }
-footer .telegram:hover a {
+footer .btn:hover a {
   color: #ffdf70;
+}
+@media (max-width: 700px) {
+  footer {
+    height: 100px;
+  }
+  footer .footer-content .block {
+    flex-direction: column;
+  }
+  footer .footer-content .btn:last-child {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 500px) {
   footer .footer-content {
@@ -248,7 +262,7 @@ footer .telegram:hover a {
   footer .footer-content .mail {
     font-size: 16px;
   }
-  footer .footer-content .telegram {
+  footer .footer-content .btn {
     font-size: 16px;
     margin: 0;
   }
@@ -257,7 +271,7 @@ footer .telegram:hover a {
   footer .footer-content .mail {
     font-size: 14px;
   }
-  footer .footer-content .telegram {
+  footer .footer-content .btn {
     width: 115px;
     font-size: 14px;
   }
