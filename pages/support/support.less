@@ -174,26 +174,29 @@ form{
 @media (min-height: 1000px) {
     main{
         height: 100vh;
+        section{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
     }
     footer{
         position: fixed;
         bottom: 0;
+        z-index: 5;
+        position: relative;
     }
 }
-
 
 
 @media (min-width: 1500px) {
     main{
-        padding-top: 100px;
-        padding-bottom: 80px;
-        
-    }
-}
-
-@media (min-width: 1700px) {
-    main{
         height: 100vh;
+        padding-top: 0;
+        padding-bottom: 80px;  
+        section{
+            padding-top: 50px;
+            padding-bottom: 0;
+        }
     }
     footer{
         position: fixed;

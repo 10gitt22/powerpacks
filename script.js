@@ -77,14 +77,14 @@ function getTime(){
 	let date= new Date();
 	date = Date.parse(date);
 
-	let final_date = new Date('2021-06-22T23:00:00')
+	let final_date = new Date('2021-07-07T23:00:00')
 	final_date = Date.parse(final_date);
 
 	let time_in_seconds = (final_date - date) / 1000;
 
 	if (time_in_seconds <= 0){
 		let timer = document.querySelector('.timer');
-		let closedHtml = `<div class="sale-closed">Sale has been closed</div> `
+		let closedHtml = `<div class="sale-closed">coming soon</div> `
 		timer.innerHTML = closedHtml;
 	} else {
 		let time_left = {
