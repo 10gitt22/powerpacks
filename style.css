@@ -100,7 +100,7 @@ header ul .li-logo a {
 header ul .li-logo #logo {
   height: 57px;
 }
-header #menu li:hover a {
+header ul li:hover a {
   border-color: #ffdf70;
   color: #ffdf70;
 }
@@ -133,6 +133,7 @@ header .sidenav {
 }
 header .sidenav .closebtn {
   position: absolute;
+  padding: 10px 5px;
   top: 0;
   right: 25px;
   font-size: 36px;
