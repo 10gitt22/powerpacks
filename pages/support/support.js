@@ -38,7 +38,6 @@ function validationForm(inputs){
 }
 
 let arrInput = document.querySelectorAll('.field > input');
-console.log(arrInput);
 validationForm(arrInput);
 
 $(document).ready(function() {
